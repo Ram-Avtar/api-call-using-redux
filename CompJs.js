@@ -32,18 +32,30 @@ const CompJs = (props) => {
 
             <Text style={{ color: 'white' }}>new app</Text>
             {/* {console.log("matche details ", info.matches.map((data) => (data.winner_team)))} */}
-            {/* <ul>
+            <ol>
 
-                {info.matches.map((stResult) => (
-                    <li
-                        style={{ color: 'white' }}
-                        key={stResult.date}
-                    >
-                        {stResult.winner_team}
-                    </li>
+                {matche.map((detail) => (
+                    <ol>
+                        <li
+                            style={{ color: 'white' }}
+                            key={detail.date}>
+                            {detail['team-1']}
+                        </li>
+                        <li
+                            style={{ color: 'white' }}
+                            key={detail.date}>
+                            {detail['team-2']}
+                        </li>
+                        <li
+                            style={{ color: 'white' }}
+                            key={detail.date}>
+                            {detail.winner_team}
+                        </li>
+                    </ol>
+
                 ))}
 
-            </ul> */}
+            </ol>
             <Button title='fetch' onPress={props.onFetchData} />
 
         </View>

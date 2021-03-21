@@ -39,22 +39,6 @@ export const fetchSuccess = (url) => {
         catch (error) {
             dispatch(fetchFailed(error.message));
         }
-
-
-
-
-
-
-        // console.log('api call ', dispatch(dataFetching(fetchData(dataM))));
-
-        // if (API_SUCCESS)
-        //     dispatch({ type: API_SUCCESS, payload: data })
-        // return json.matches;
-
-        // catch ;
-        //     // if (API_FAILED) dispatch({ type: API_FAILED, payload: error })
-        //     console.error(error);
-        // }
     }
 }
 
